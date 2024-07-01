@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- Remotes -->
+    <remote name="gitlab-local" fetch="https://gitlab.com" />
+    <remote name="xagaproject" fetch="https://github.com/xagaproject" revision="14" />
+
+    <!-- DT -->
+    <project name="device_xiaomi_xaga" path="device/xiaomi/xaga" remote="xagaproject" revision="14-RisingOS" clone-depth="1000"/>
+    <project name="device_mediatek_sepolicy_vndr" path="device/mediatek/sepolicy_vndr" remote="xagaproject" />
+    <project name="android_device_xiaomi_miuicamera-xaga" path="device/xiaomi/miuicamera-xaga" remote="xagaproject" />
+
+    <!-- VT -->
+    <project name="priiii1808/vendor_xiaomi_xaga" path="vendor/xiaomi/xaga" remote="gitlab-local" revision="14" />
+    <project name="ChrisCatto/android_vendor_xiaomi_miuicamera-xaga" path="vendor/xiaomi/miuicamera-xaga" remote="gitlab-local" revision="13" />
+    <project name="vendor_firmware" path="vendor/firmware" remote="xagaproject" />
+
+    <!-- KT -->
+    <project name="kernel_xiaomi_xaga" path="kernel/xiaomi/xaga" remote="xagaproject" revision="refs/heads/falcon" clone-depth="1" />
+
+    <!-- HT -->
+    <project name="hardware_mediatek" path="hardware/mediatek" remote="xagaproject" />
+    <project name="android_hardware_xiaomi" path="hardware/xiaomi" remote="xagaproject" />
+</manifest>
