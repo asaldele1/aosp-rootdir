@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <!-- Remotes -->
-    <remote name="gitlab-local" fetch="https://gitlab.com" />
     <remote name="xagaproject" fetch="https://github.com/xagaproject" revision="14" />
 
     <!-- DT -->
-    <project name="device_xiaomi_xaga" path="device/xiaomi/xaga" remote="xagaproject" revision="14-DerpFest" clone-depth="1000"/>
-    <project name="device_mediatek_sepolicy_vndr" path="device/mediatek/sepolicy_vndr" remote="xagaproject" />
+    <project name="PixelOS-UDC/device_xiaomi_xaga" path="device/xiaomi/xaga" remote="github" revision="14-DerpFest" clone-depth="1000"/>
+    <project name="device_mediatek_sepolicy_vndr" path="device/mediatek/sepolicy_vndr" remote="xagaproject" revision="14-DerpFest" />
     <project name="android_device_xiaomi_miuicamera-xaga" path="device/xiaomi/miuicamera-xaga" remote="xagaproject" />
 
     <!-- VT -->
-    <project name="priiii1808/vendor_xiaomi_xaga" path="vendor/xiaomi/xaga" remote="gitlab-local" revision="14" />
-    <project name="ChrisCatto/android_vendor_xiaomi_miuicamera-xaga" path="vendor/xiaomi/miuicamera-xaga" remote="gitlab-local" revision="13" />
+    <project name="priiii1808/vendor_xiaomi_xaga" path="vendor/xiaomi/xaga" remote="gitlab" revision="test" />
+    <project name="ChrisCatto/android_vendor_xiaomi_miuicamera-xaga" path="vendor/xiaomi/miuicamera-xaga" remote="gitlab" revision="13" />
     <project name="vendor_firmware" path="vendor/firmware" remote="xagaproject" />
 
     <!-- KT -->
