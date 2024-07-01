@@ -1,8 +1,8 @@
 #!/bin/bash
 
 ## Sync
-# Init RisingOS repos
-repo init -u https://github.com/RisingTechOSS/android.git --depth=1 -b fourteen --git-lfs
+# Init DerpFest repos
+repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 14 --depth=1 --git-lfs
 
 # Sync
 repo sync -c --force-sync --no-tags --no-clone-bundle -j$(nproc --all) --optimized-fetch --prune
