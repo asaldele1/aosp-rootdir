@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- Remotes -->
+    <remote name="github-asaldele1" fetch="https://github.com/asaldele1" revision="14-RisingOS" />
+
+    <!-- vendor (lineage-priv) -->
+    <project path="vendor/lineage-priv/keys" name="vendor_lineage-priv_keys" remote="github-asaldele1" clone-depth="1000" />
+
+    <!-- vendor (extra) -->
+    <project path="vendor/extra" name="vendor_extra" remote="github-asaldele1" clone-depth="1000" />
+
+    <!-- vendor (extra/tools/releases) -->
+    <project path="vendor/extra/tools/releases/OTA" name="OTA" remote="xagaproject" clone-depth="1000" />
+</manifest>

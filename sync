@@ -1,0 +1,11 @@
+#!/bin/bash
+
+## Sync
+# Init RisingOS repos
+repo init -u https://github.com/RisingTechOSS/android.git --depth=1 -b fourteen --git-lfs
+
+# Sync
+repo sync -c --force-sync --no-tags --no-clone-bundle -j$(nproc --all) --optimized-fetch --prune
+
+# Apply personal patches
+APPLY_PATCHES=true . build/envsetup.sh
